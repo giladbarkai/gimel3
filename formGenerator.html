@@ -1,73 +1,70 @@
 <html dir="rtl" lang="ar">
    <head>
-   <Title>מחולל הפורמים של ג3</Title>
-   <meta charset="UTF-8">
-
-   </style>
-   <script>
-     function v(n) {
-       return document.getElementById(n).value;
-     }
-
-     function go() {
-       _BASE_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeWRVJ01jUNsr1HSpa0DXKAyacSrsoOVNtE6_mt1s-i1L5rQA/viewform'
-       
-       var url = new URL(_BASE_URL);
-       var search_params = url.searchParams;
-
-       // Hebrew RTL.
-       search_params.set('forcehl', 1);
-       search_params.set('hl', 'he');
-       
-       search_params.set('entry.1611357538', v('firstname'));
-       search_params.set('entry.292815734', v('surname'));
-       search_params.set('entry.2127134164', v('idnum'));
-       search_params.set('entry.1704621945', v('parentname'));
-       search_params.set('entry.1030353947', v('phonenum'));
-  
-       location.href = url;
-     }
-   </script>
-   </head>  
+      <Title>מחולל הפורמים של ג3</Title>
+      <meta charset="UTF-8">
+      </style>
+      <script>
+         function v(n) {
+           return document.getElementById(n).value;
+         }
+         
+         function go() {
+           _BASE_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeWRVJ01jUNsr1HSpa0DXKAyacSrsoOVNtE6_mt1s-i1L5rQA/viewform'
+           
+           var url = new URL(_BASE_URL);
+           var search_params = url.searchParams;
+         
+           // Hebrew RTL.
+           search_params.set('forcehl', 1);
+           search_params.set('hl', 'he');
+           
+           search_params.set('entry.1611357538', v('firstname'));
+           search_params.set('entry.292815734', v('surname'));
+           search_params.set('entry.2127134164', v('idnum'));
+           search_params.set('entry.1704621945', v('parentname'));
+           search_params.set('entry.1030353947', v('phonenum'));
+         
+           location.href = url;
+         }
+      </script>
+   </head>
    <body>
       <center>
          <h1>מחולל הפורמים של ג3</h1>
       </center>
-<div>
-<h3>הוראות:</h3>
-<ol>
-<li>למלא את הפרטים</li>
-<li>ללחוץ על "הטופס הממולא"</li>
-<li>וכשנפתח הטופס, לשמור במועדפים</li>
-<li> ...</li>
-<li> !Profit</li>
-</ol>
-</div>
-<h3>בבקשה למלא:</h3>
-         <ul >
-            <li  >
-               <label class="description">שם פרטי</label>
-<div>
-               <input id="firstname" name="firstname" type="text" value=""/> </div>
-            </li>
-            <li >
-               <label class="description">שם משפחה</label>
-                  <div><input id="surname" name="surname" type="text" value=""/> </div>
-            </li>
-            <li >
-               <label class="description">מספר זהות</label>
-                  <div><input id="idnum" name="idnum" type="number" value=""/> </div>
-            </li>
-            <li >
-               <label class="description">שם הורה</label>
-                  <div><input id="parentname" name="parentname" type="text" value=""/> </div>
-            </li>
-            <li id="li_5" >
-               <label class="description">טלפון</label>
-                  <div><input id="phonenum" name="phonenum" type="tel" value=""/> </div>
-            </li>
-          
-         </ul>
-         <input type="button" value="הטופס הממולא"  onclick="go();"/>
+      <div>
+         <h3>הוראות:</h3>
+         <ol>
+            <li>למלא את הפרטים</li>
+            <li>ללחוץ על "הטופס הממולא"</li>
+            <li>וכשנפתח הטופס, לשמור במועדפים</li>
+            <li> ...</li>
+            <li> !Profit</li>
+         </ol>
+      </div>
+      <h3>בבקשה למלא:</h3>
+      <ul >
+         <li  >
+            <label class="description">שם פרטי</label>
+            <div><input id="firstname" name="firstname" type="text" value=""/></div>
+         </li>
+         <li >
+            <label class="description">שם משפחה</label>
+            <div><input id="surname" name="surname" type="text" value=""/></div>
+         </li>
+         <li >
+            <label class="description">מספר זהות</label>
+            <div><input id="idnum" name="idnum" type="number" value=""/></div>
+         </li>
+         <li >
+            <label class="description">שם הורה</label>
+            <div><input id="parentname" name="parentname" type="text" value=""/></div>
+         </li>
+         <li id="li_5" >
+            <label class="description">טלפון</label>
+            <div><input id="phonenum" name="phonenum" type="tel" value=""/></div>
+         </li>
+      </ul>
+      <input type="button" value="הטופס הממולא"  onclick="go();"/>
    </body>
 </html>
